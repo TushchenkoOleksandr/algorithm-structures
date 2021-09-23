@@ -5,7 +5,7 @@ const array = [
 
 let count = 0;
 
-function quickSort(arr) {
+const quickSort = (arr) => {
   if (arr.length <= 1) {
     return arr;
   }
@@ -25,7 +25,7 @@ function quickSort(arr) {
     }
   }
   return [...quickSort(less), pivot, ...quickSort(greater)];
-}
+};
 
 console.log(quickSort(array));
 console.log(count);

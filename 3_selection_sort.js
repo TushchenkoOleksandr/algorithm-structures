@@ -4,7 +4,7 @@ const array = [
 ];
 let count = 0;
 
-function selectionSort(arr) {
+const selectionSort = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     let indexMin = i;
     for (let j = i + 1; j < arr.length; j++) {
@@ -18,7 +18,7 @@ function selectionSort(arr) {
     arr[indexMin] = tmp;
   }
   return arr;
-}
+};
 
 console.log(selectionSort(array));
 console.log(count);
